@@ -54,3 +54,24 @@ function PrimGenerator(hatar1, hatar2) {
     } while (sikeresGeneralas == false || probalkozasokSzama < 100);
     return generaltSzam;
 }
+function TeglalapKeruletTeruletTupleFuggveny(a, b) {
+    var kerulet = 2 * (a + b);
+    var terulet = a * b;
+    return [kerulet, terulet];
+}
+//Univerzális tömb generátor
+function UniverzalisTombGenerator(meret, alsoHatar, felsoHatar) {
+    var generaltTomb = [];
+    for (var i = 0; i < meret; i++) {
+        generaltTomb.push(Math.round(Math.random() * (felsoHatar - alsoHatar)) + alsoHatar);
+    }
+    return generaltTomb;
+}
+//Összegzés tétele TypeScript-ben
+function OsszegzesTeteleTS(vizsgaltTomb) {
+    var osszeg = 0;
+    for (var i = 0; i < vizsgaltTomb.length; i++) {
+        osszeg += vizsgaltTomb[i];
+    }
+    return osszeg;
+}

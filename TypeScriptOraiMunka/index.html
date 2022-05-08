@@ -11,6 +11,7 @@
 <body>
     <script src="fuggvenyek.js"></script>
     <script src="osszetettValtozoTipusok.js"></script>
+    <script src="osztalyok.js"></script>
     <script>
         ILoveTypeScript();
         NegyzetKeruletTeruletEljaras(7);
@@ -22,6 +23,11 @@
         let parosEElem = 7;
         document.write("<br>A párosra vizsgált szám:" + parosEElem + " eredménye:" + ParosE(parosEElem));
         document.write("<br>A generált prímszám:" + PrimGenerator(15, 16));
+        let teglalapEredmenyek = TeglalapKeruletTeruletTupleFuggveny(4, 5);
+        document.write("<br>A téglalap kerülete: " + teglalapEredmenyek[0]);
+        document.write("<br>A téglalap területe: " + teglalapEredmenyek[1]);
+        document.write("<hr>");
+        document.write(UniverzalisTombGenerator(10, 20, 40));
     </script>
 </body>
 
